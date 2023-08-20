@@ -1,0 +1,167 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.aic {
+  align-items: center;
+}
+
+.ptb-25 {
+  padding: 25px 0;
+}
+
+.header {
+  background-color: #AA0601;
+}
+.header h1 a {
+  background-image: url(https://github.com/icephy/2023_W3_glasses/blob/main/img/logo-white.png?raw=true);
+  background-size: cover;
+  width: 80px;
+  height: 50px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@media (max-width: 375px) {
+  .header .container {
+    padding: 0;
+    max-width: 100%;
+  }
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  font-size: 20px;
+  gap: 64px;
+}
+
+.nav-item a {
+  color: #FFFFFF;
+}
+.nav-item a:hover {
+  color: #650300;
+}
+
+.banner {
+  background-image: url(https://raw.githubusercontent.com/icephy/2023_W3_glasses/main/img/home-header.png);
+  background-size: cover;
+}
+
+.ad-slogan {
+  width: 50%;
+  margin-left: auto;
+  text-align: right;
+  padding: 296px 0;
+}
+.ad-slogan p {
+  font-size: 36px;
+  color: #650300;
+}
+.ad-slogan h2 {
+  font-size: 64px;
+  font-weight: bold;
+  color: #650300;
+  padding-bottom: 4px;
+}
+
+.btn-sm {
+  max-width: 104px;
+  background-color: #AA0601;
+  margin-left: auto;
+}
+.btn-sm a {
+  padding: 6px 12px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+.btn-sm a:hover {
+  background-color: #FFFFFF;
+  color: #AA0601;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 696px;
+    padding: 0 36px;
+  }
+  .banner {
+    background-image: url(https://raw.githubusercontent.com/icephy/2023_W3_glasses/main/img/home-header-sm.png);
+  }
+  .ad-slogan {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    max-width: 348px;
+  }
+  .header {
+    padding: 0px;
+  }
+  .nav-bar {
+    flex-direction: column;
+    padding: 0;
+  }
+  h1 {
+    width: 100%;
+    padding: 16px 12px;
+  }
+  .nav {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0%;
+  }
+  .nav-item {
+    width: 50%;
+  }
+  .nav-item a {
+    width: 100%;
+    padding: 12px 0px;
+    outline: 1px solid #fff;
+    text-align: center;
+  }
+  .ad-slogan {
+    padding: 144px 0;
+  }
+  .ad-slogan p {
+    font-size: 16px;
+  }
+  .ad-slogan h2 {
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=all.css.map */
