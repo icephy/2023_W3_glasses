@@ -122,9 +122,11 @@
 .feature{
     display: flex;
     justify-content: space-between;
+
     h4{
         font-size: $text-m;
         font-weight: bold;
+    }
 }
 
 // 平板樣式
@@ -201,7 +203,6 @@
             font-size: $text-m;
         }
     }
-
     .feature{
         flex-direction: column;
     }
@@ -209,3 +210,4 @@
         width: 100%;
     }
 }
+
