@@ -1,0 +1,35 @@
+// Flexbox
+
+.d-flex{
+    display: flex;
+}
+
+.jcsb{
+    justify-content: space-between;
+}
+
+.aic{
+    align-items: center;
+}
+
+// 排版容器
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.row{
+    margin-left: -12px;
+    margin-right: -12px;
+    display: flex;
+}
+
+.px-12{
+    padding: 0 12px;
+}

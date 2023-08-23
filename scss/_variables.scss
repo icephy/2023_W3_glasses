@@ -1,0 +1,30 @@
+// Variables
+
+// 顏色系統 Color system
+
+$primary: #AA0601;
+$secondary: #650300;
+$tertiary: #FBF2F2;
+$neutral-gary-wh: #FFFFFF;
+$neutral-gary-lh: #DEE2E6;
+$neutral-gary-dr: #707070;
+$neutral-gary-bk: #000000;
+$opacity: rgba(0, 0, 0, 0.1608);
+
+// 字級 Fonts
+
+$text-xxl: 64px;
+$text-xl: 48px;
+$text-lg: 36px;
+$text-m: 24px;
+$text-s: 20px;
+$text-xs: 16px;
+$text-xxs: 14px;
+
+// 字型 Font family 
+
+$roboto: 'Roboto', sans-serif;
+$noto-sans-tc: 'Noto Sans TC', sans-serif;
+.tac{
+    text-align: center;
+}

@@ -1,79 +1,8 @@
-// 顏色 Variables
-
-$primary: #AA0601;
-$secondary: #650300;
-$tertiary: #FBF2F2;
-$neutral-gary-wh: #FFFFFF;
-$neutral-gary-lh: #DEE2E6;
-$neutral-gary-dr: #707070;
-$neutral-gary-bk: #000000;
-$opacity: rgba(0, 0, 0, 0.1608);
-
-// 字級 fonts
-
-$text-xxl: 64px;
-$text-xl: 48px;
-$text-lg: 36px;
-$text-m: 24px;
-$text-s: 20px;
-$text-xs: 16px;
-$text-xxs: 14px;
-
-// Font family 字型
-
-$roboto: 'Roboto', sans-serif;
-$noto-sans-tc: 'Noto Sans TC', sans-serif;
-
-
-// 全站樣式 CSS base，全站樣式通常使用在 HTML 標籤上
-
-*, *::before, *::after{
-    box-sizing: border-box;
-}
-
-body{
-    font-family: $noto-sans-tc;
-    line-height: 1.5;
-}
-
-img{
-    max-width: 100%;
-    vertical-align: middle;    
-}
-
-a{
-    text-decoration: none;
-    display: block;
-}
-
-
-
-// Flex layout
-
-.d-flex{
-    display: flex;
-}
-
-.container{
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 12px;
-}
-
-.jcsb{
-    justify-content: space-between;
-}
-
-.aic{
-    align-items: center;
-}
-
-// Utilities 間距
-
-.ptb-25{
-    padding: 25px 0;
-}
-
+@import "variables";
+@import "base";
+@import "layout";
+@import "utilities";
+@import "icon";
 
 // header 區塊
 
@@ -157,6 +86,51 @@ a{
     }
 }
 
+// Service 區塊
+
+.service{
+    background-color: $tertiary;
+    h3{
+        color: $secondary;
+        font-size: $text-xl;
+        font-weight: bold;
+    }
+
+    h4{
+        color: $secondary;
+        font-size: $text-m;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+    span{
+        padding: 24px 0;
+        text-align: center;
+        display: block;
+    }
+    p{
+        font-size: $text-xs;
+        color: $neutral-gary-bk;
+    }
+
+    @media (max-width: 375px){
+        .ptb-80{
+            padding: 40px 0;
+        }
+    }
+}
+
+.feature{
+    display: flex;
+    justify-content: space-between;
+    h4{
+        font-size: $text-m;
+        font-weight: bold;
+    }
+    @media (max-width: 375px){
+
+    }
+}
+
 // 平板樣式
 
 @media(max-width: 768px){
@@ -173,6 +147,16 @@ a{
         width: 100%;
     }
 
+    // 為何在平板時 padding 80 不見，導致要再寫一次
+    .ptb-80{
+        padding: 80px 0;
+    }
+    .feature{
+        flex-wrap: wrap;
+    }
+    .col-4{
+        width: 50%;
+    }
 }
 
 
@@ -220,5 +204,12 @@ a{
         h2{
             font-size: $text-m;
         }
+    }
+
+    .feature{
+        flex-direction: column;
+    }
+    .col-4{
+        width: 100%;
     }
 }
