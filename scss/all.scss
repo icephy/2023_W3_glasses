@@ -208,6 +208,19 @@
     .feature{
         flex-direction: column;
     }
+
+    .service{
+        .ptb-80{
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        // 推出兼具用的 .ptb-80 class 套用在不同的 div 時，同時需要在平板上顯現不同樣的間距時，可以如何管理 CSS 呢？直接在手機版上另外設置間距數值嗎？
+
+        h3{
+            font-size: $text-m;
+        }
+    }
+
     .col-4{
         width: 100%;
     }
