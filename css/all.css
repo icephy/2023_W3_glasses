@@ -108,7 +108,11 @@ a {
   color: #FFFFFF;
 }
 .nav-item a:hover {
-  color: #650300;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.nav-item a:active {
+  color: #FFFFFF;
 }
 
 .banner {
@@ -147,6 +151,8 @@ a {
 .btn-sm a:hover {
   background-color: #FFFFFF;
   color: #AA0601;
+  transition: 0.2s;
+  font-weight: bold;
 }
 
 .service {
@@ -229,6 +235,13 @@ a {
     padding: 12px 0px;
     outline: 1px solid #fff;
     text-align: center;
+  }
+  .nav-item:hover {
+    background-color: #650300;
+    transition: 0.2s;
+  }
+  .nav-item:active {
+    background-color: #650300;
   }
   .ad-slogan {
     padding: 144px 0;
