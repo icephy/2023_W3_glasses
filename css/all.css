@@ -56,6 +56,24 @@
   background-color: #000000;
 }
 
+.br-gary {
+  border-width: 0px 1px 1px 1px;
+  border-style: solid solid solid solid;
+  border-color: #DEE2E6;
+}
+
+.rd-b-rltb {
+  border-radius: 4px;
+}
+
+.rd-b-rl {
+  border-radius: 0px 0px 4px 4px;
+}
+
+.sd-bk-op-80 {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
 .full-bg {
   background-image: url(https://github.com/icephy/2023_W3_glasses/blob/main/img/index-bg.png?raw=true);
   background-size: cover;
@@ -92,6 +110,10 @@ a {
   align-items: center;
 }
 
+.fxdc {
+  flex-direction: column;
+}
+
 .container {
   max-width: 1320px;
   margin: 0 auto;
@@ -122,6 +144,10 @@ a {
   display: flex;
 }
 
+.p-16 {
+  padding: 16px;
+}
+
 .ptb-25 {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -144,6 +170,10 @@ a {
 
 .mb-4 {
   margin-bottom: 4px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
 }
 
 .mb-48 {
@@ -264,6 +294,17 @@ a {
   display: none;
 }
 
+.feedback {
+  gap: 24px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.fb-date {
+  font-size: 14px;
+  color: #707070;
+}
+
 @media (max-width: 992px) {
   .container {
     max-width: 768px;
@@ -292,6 +333,13 @@ a {
   }
   .classic-product {
     flex-direction: column;
+  }
+  .feedback {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .col-3 {
+    width: 48%;
   }
 }
 @media (max-width: 767px) {
@@ -359,5 +407,12 @@ a {
   }
   .series-1-bg-mobile, .series-2-bg-mobile {
     display: block;
+  }
+  .feedback {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .col-3 {
+    width: 100%;
   }
 }/*# sourceMappingURL=all.css.map */

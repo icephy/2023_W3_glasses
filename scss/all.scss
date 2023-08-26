@@ -122,6 +122,17 @@
     display: none;
 }
 
+.feedback{
+    gap: 24px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.fb-date{
+    font-size: $text-xxs;
+    color: $neutral-gary-dr;
+}
+
 // 平板樣式
 
 @media (max-width: 992px){
@@ -160,6 +171,14 @@
 
     .classic-product{
         flex-direction: column;
+    }
+
+    .feedback{
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .col-3{
+        width: 48%;
     }
 }
 
@@ -248,6 +267,14 @@
 
     .series-1-bg-mobile, .series-2-bg-mobile{
         display: block;
+    }
+
+    .feedback{
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .col-3{
+        width: 100%;
     }
     
 
