@@ -28,3 +28,23 @@ $noto-sans-tc: 'Noto Sans TC', sans-serif;
 .tac{
     text-align: center;
 }
+
+// 圖片 Hover
+.hover-op:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+// 字型 Hover
+
+.italic-t{
+    font-family: $roboto;
+    font-size: $text-xl;
+    color: $primary;
+    font-style: italic;
+    font-weight: 900;
+    &:hover{
+        color: $secondary;
+        transition: 0.2s;
+    }
+}

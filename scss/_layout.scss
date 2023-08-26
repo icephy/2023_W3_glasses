@@ -25,14 +25,18 @@
     width: 25%;
 }
 
+.col-4{
+    width: 33.3333%;
+}
+
 
 .px-12{
     padding-left: 12px;
     padding-right: 12px;
 }
 
-// .row{
-//     margin-left: -12px;
-//     margin-right: -12px;
-//     display: flex;
-// }
+.row{
+    margin-left: -12px;
+    margin-right: -12px;
+    display: flex;
+}
