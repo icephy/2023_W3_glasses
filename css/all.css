@@ -1,5 +1,35 @@
+.h2 {
+  font-size: 64px;
+  color: #650300;
+  font-weight: bold;
+}
+
+.h3 {
+  font-size: 48px;
+  color: #650300;
+  font-weight: bold;
+}
+
+.h4 {
+  font-size: 24px;
+  color: #650300;
+  font-weight: bold;
+}
+
 .tac {
   text-align: center;
+}
+
+.tar {
+  text-align: right;
+}
+
+.t-wh {
+  color: #FFFFFF;
+}
+
+.t-bk {
+  color: #000000;
 }
 
 .hover-op:hover {
@@ -17,6 +47,18 @@
 .italic-t:hover {
   color: #650300;
   transition: 0.2s;
+}
+
+.hover-bg-wh-to-bk {
+  background-color: #FFFFFF;
+}
+.hover-bg-wh-to-bk:hover {
+  background-color: #000000;
+}
+
+.full-bg {
+  background-image: url(https://github.com/icephy/2023_W3_glasses/blob/main/img/index-bg.png?raw=true);
+  background-size: cover;
 }
 
 *, *::before, *::after {
@@ -65,6 +107,10 @@ a {
   width: 33.3333%;
 }
 
+.col-6 {
+  width: 50%;
+}
+
 .px-12 {
   padding-left: 12px;
   padding-right: 12px;
@@ -91,8 +137,17 @@ a {
   padding-bottom: 24px;
 }
 
-.pb-48 {
-  padding-bottom: 48px;
+.ptb-296 {
+  padding-top: 296px;
+  padding-bottom: 296px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
 }
 
 .mb-8 {
@@ -158,19 +213,11 @@ a {
 .ad-slogan {
   width: 50%;
   margin-left: auto;
-  text-align: right;
-  padding: 296px 0;
-}
-.ad-slogan p {
-  font-size: 36px;
-  color: #650300;
 }
 
-.h2 {
-  font-size: 64px;
-  font-weight: bold;
+.ad-sl-t {
+  font-size: 36px;
   color: #650300;
-  padding-bottom: 4px;
 }
 
 .btn-sm {
@@ -191,20 +238,8 @@ a {
   font-weight: bold;
 }
 
-.h3 {
-  color: #650300;
-  font-size: 48px;
-  font-weight: bold;
-}
-
 .service {
   background-color: #FBF2F2;
-}
-.service h4 {
-  color: #650300;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 4px;
 }
 .service span {
   display: block;
@@ -218,15 +253,15 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.feature h4 {
-  font-size: 24px;
-  font-weight: bold;
-}
 
 .classic-product {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.series-1-bg-mobile, .series-2-bg-mobile {
+  display: none;
 }
 
 @media (max-width: 992px) {
@@ -244,15 +279,19 @@ a {
   .feature {
     flex-wrap: wrap;
   }
-  .col-4 {
-    width: 50%;
-  }
-  .classic-product {
-    flex-direction: column;
+  .special-series {
+    flex-wrap: wrap;
+    gap: 32px;
   }
   .col-4 {
     width: 50%;
     margin-bottom: 24px;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .classic-product {
+    flex-direction: column;
   }
 }
 @media (max-width: 767px) {
@@ -296,17 +335,17 @@ a {
   .ad-slogan {
     padding: 144px 0;
   }
-  .ad-slogan p {
+  .ad-sl-t {
     font-size: 16px;
   }
   .h2 {
     font-size: 24px;
   }
-  .feature {
-    flex-direction: column;
-  }
   .h3 {
     font-size: 24px;
+  }
+  .feature {
+    flex-direction: column;
   }
   .col-4 {
     width: 100%;
@@ -314,5 +353,11 @@ a {
   .ptb-80 {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  .series-1-bg-desktop, .series-2-bg-desktop {
+    display: none;
+  }
+  .series-1-bg-mobile, .series-2-bg-mobile {
+    display: block;
   }
 }/*# sourceMappingURL=all.css.map */

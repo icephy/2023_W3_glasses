@@ -62,19 +62,12 @@
 .ad-slogan{
     width: 50%;
     margin-left: auto;
-    text-align: right;
-    padding: 296px 0;
-    p{
-        font-size: $text-lg;
-        color: $secondary;
-    }  
 }
+// .ad-slogan 這個用 margin-left: auto; 的容器可以如何管理在容器工具裡
 
-.h2{
-    font-size: $text-xxl;
-    font-weight: bold;
+.ad-sl-t{
+    font-size: $text-lg;
     color: $secondary;
-    padding-bottom: 4px;
 }
 
 .btn-sm{
@@ -97,20 +90,11 @@
 
 // Service 區塊
 
-.h3{
-    color: $secondary;
-    font-size: $text-xl;
-    font-weight: bold;
-}
+
 
 .service{
     background-color: $tertiary;
-    h4{
-        color: $secondary;
-        font-size: $text-m;
-        font-weight: bold;
-        margin-bottom: 4px;
-    }
+
     span{
         display: block;
     }
@@ -124,12 +108,6 @@
 .feature{
     display: flex;
     justify-content: space-between;
-
-    h4{
-        font-size: $text-m;
-        font-weight: bold;
-    }
- 
 }
 
 // 經典樣式商品區塊
@@ -138,6 +116,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.series-1-bg-mobile, .series-2-bg-mobile{
+    display: none;
 }
 
 // 平板樣式
@@ -161,17 +143,23 @@
     .feature{
         flex-wrap: wrap;
     }
-    .col-4{
-        width: 50%;
-    }
 
-    .classic-product{
-        flex-direction: column;
+    .special-series{
+        flex-wrap: wrap;
+        gap: 32px;
     }
 
     .col-4{
         width: 50%;
         margin-bottom: 24px;
+    }
+
+    .col-6{
+        width: 100%;
+    }
+
+    .classic-product{
+        flex-direction: column;
     }
 }
 
@@ -223,21 +211,26 @@
 
     .ad-slogan{
         padding: 144px 0;
-        p{
-            font-size: $text-xs;
-        }
+    }
+    // 像這種在桌機套用了 .ptb-296 的樣式，在手機版要更換其他間距值時如何管理呢？
+    // 如果在首頁時的手機版 .ptb-296 要換成 .ptb-144，而在商品頁要為 .ptb-100，那該如何管理呢
+
+    .ad-sl-t{
+        font-size: $text-xs;
     }
 
     .h2{
         font-size: $text-m;
     }
-    .feature{
-        flex-direction: column;
-    }
 
     .h3{
         font-size: $text-m;
     }
+    // .h2 .h3 文字在不同裝置下變大變小時，可以如何管理覆蓋權重的 CSS
+
+    .feature{
+        flex-direction: column;
+    }  
 
     .col-4{
         width: 100%;
@@ -247,7 +240,16 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    // 推出兼具用的 .ptb-80 class 套用在不同的 div 時，同時需要在平板上顯現不同樣的間距時，可以如何管理 CSS 呢？直接在手機版上另外設置間距數值嗎？
+    // 推出間距用的 .ptb-80 class 套用在不同的 div 時，同時需要在平板上顯現不同樣的間距時，可以如何管理 CSS 呢？直接在手機版上另外設置間距數值嗎？
+
+    .series-1-bg-desktop, .series-2-bg-desktop{
+        display: none;
+    }
+
+    .series-1-bg-mobile, .series-2-bg-mobile{
+        display: block;
+    }
+    
 
 }
 

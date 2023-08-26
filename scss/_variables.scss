@@ -11,7 +11,7 @@ $neutral-gary-dr: #707070;
 $neutral-gary-bk: #000000;
 $opacity: rgba(0, 0, 0, 0.1608);
 
-// 字級 Fonts
+// 字級變數 Fonts
 
 $text-xxl: 64px;
 $text-xl: 48px;
@@ -25,9 +25,48 @@ $text-xxs: 14px;
 
 $roboto: 'Roboto', sans-serif;
 $noto-sans-tc: 'Noto Sans TC', sans-serif;
+
+// h1~h6 設定
+
+.h2{
+    font-size: $text-xxl;
+    color: $secondary;
+    font-weight: bold;
+}
+
+.h3{
+    font-size: $text-xl;
+    color: $secondary;
+    font-weight: bold;
+}
+
+.h4{
+    font-size: $text-m;
+    color: $secondary;
+    font-weight: bold;
+}
+
+// 文字對齊設定
+
 .tac{
     text-align: center;
 }
+
+.tar{
+    text-align: right;
+}
+
+
+// 文字顏色套入
+
+.t-wh{
+    color: $neutral-gary-wh;
+}
+
+.t-bk{
+    color: $neutral-gary-bk;
+}
+
 
 // 圖片 Hover
 .hover-op:hover{
@@ -47,4 +86,21 @@ $noto-sans-tc: 'Noto Sans TC', sans-serif;
         color: $secondary;
         transition: 0.2s;
     }
+}
+// 兩個相同字型樣式設定，卻有 hover 效果不同，另一個滑過時背景出現變化，這樣的情境如何管理 CSS
+
+.hover-bg-wh-to-bk{
+    background-color: $neutral-gary-wh;
+    &:hover{
+        background-color: $neutral-gary-bk;
+    }
+}
+
+
+
+// 背景容器
+
+.full-bg{
+    background-image: url(https://github.com/icephy/2023_W3_glasses/blob/main/img/index-bg.png?raw=true);
+    background-size: cover;
 }
