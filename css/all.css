@@ -110,6 +110,14 @@ a {
   align-items: center;
 }
 
+.aifs {
+  align-items: flex-start;
+}
+
+.aibl {
+  align-items: baseline;
+}
+
 .fxdc {
   flex-direction: column;
 }
@@ -119,6 +127,10 @@ a {
   margin: 0 auto;
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .col-3 {
@@ -142,6 +154,16 @@ a {
   margin-left: -12px;
   margin-right: -12px;
   display: flex;
+}
+
+.ptb-6 {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.plr-12 {
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .p-16 {
@@ -174,6 +196,10 @@ a {
 
 .mb-16 {
   margin-bottom: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
 }
 
 .mb-48 {
@@ -305,6 +331,30 @@ a {
   color: #707070;
 }
 
+.contact {
+  background-color: #FBF2F2;
+}
+.contact .container {
+  max-width: 636px;
+}
+
+.btn-xl {
+  max-width: 416px;
+  margin: 0 auto;
+}
+
+.btn-xl-primary {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #AA0601;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.btn-xl-primary:hover {
+  background-color: #650300;
+  transition: 0.2s;
+}
+
 @media (max-width: 992px) {
   .container {
     max-width: 768px;
@@ -340,6 +390,9 @@ a {
   }
   .col-3 {
     width: 48%;
+  }
+  .contact .container {
+    max-width: 648px;
   }
 }
 @media (max-width: 767px) {
@@ -414,5 +467,8 @@ a {
   }
   .col-3 {
     width: 100%;
+  }
+  .contact .container {
+    max-width: 372px;
   }
 }/*# sourceMappingURL=all.css.map */

@@ -133,6 +133,35 @@
     color: $neutral-gary-dr;
 }
 
+// 聯絡區塊
+
+.contact{
+    background-color: $tertiary;
+    .container{
+        max-width: 636px;
+    }
+    // 這邊是 660px 是因為 636px+24px 兩邊 padding，但是不確定是要另外寫一個 660 的容器，還是用 .container，並且依附在 .contact 下寫出 scss 來覆蓋前面的 .container max-width 寬度。
+}
+
+.btn-xl{
+    max-width: 416px;
+    margin: 0 auto;
+}
+
+.btn-xl-primary{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: $primary;
+    color: $neutral-gary-wh;
+    font-weight: bold;
+    &:hover{
+        background-color: $secondary;
+        transition: 0.2s;
+    }
+}
+
+
+
 // 平板樣式
 
 @media (max-width: 992px){
@@ -179,6 +208,13 @@
     }
     .col-3{
         width: 48%;
+    }
+
+    .contact{
+        .container{
+            max-width: 648px;
+        }
+        // 這邊設為 max-width: 648px; 是因爲設計稿上的寬度是「576px」，而在平板時，.container 左右兩邊的 padding 是各為 36px，因此算法為：576px+(36px*2)= 648px，這樣子在 box-sizing: border-box 下實際寬度才會是 576px。
     }
 }
 
@@ -276,7 +312,11 @@
     .col-3{
         width: 100%;
     }
-    
+    .contact{
+        .container{
+            max-width: 372px;
+        }
+    }
 
 }
 
