@@ -161,6 +161,23 @@
 }
 
 
+.btn-submit{
+    font-size: $text-xs;
+    font-weight: bold;
+    font-family: $noto-sans-tc;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: $primary;
+    color: $neutral-gary-wh;
+    font-weight: bold;
+    border: none;
+    &:hover{
+        background-color: $secondary;
+        transition: 0.2s;
+    }
+    // 發覺用 input 做的傳送按鈕，裡面的字型、大小樣式等都需要重新設定，不會吃到 body 寫好的全域設定，如此一來，傳送表格的「送出」按鈕，應該使用 <input> 還是 <div> 來製作呢
+}
+
 
 // 平板樣式
 
