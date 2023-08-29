@@ -90,6 +90,34 @@ $noto-sans-tc: 'Noto Sans TC', sans-serif;
 }
 // 兩個相同字型樣式設定，卻有 hover 效果不同，另一個滑過時背景出現變化，這樣的情境如何管理 CSS
 
+.underline-hover{
+    border-bottom: 3px solid $primary;
+    font-size: $text-xs;
+    color: $neutral-gary-wh;
+    &:hover{
+        transition: ease-in-out 0.1s;
+        border-bottom: 3px solid $neutral-gary-wh;
+    }    
+}
+
+.info-link{
+    font-size: $text-lg;
+    color: $neutral-gary-wh;
+    &:hover{
+        opacity: 0.8;
+        transition: ease-in-out 0.1s;
+    }
+}
+
+.policy-link{
+    font-size: $text-xxs;
+    color: $neutral-gary-wh;
+    &:hover{
+        opacity: 0.8;
+        transition: ease-in-out 0.1s;
+    }
+}
+
 .hover-bg-wh-to-bk{
     background-color: $neutral-gary-wh;
     &:hover{
@@ -103,6 +131,10 @@ $noto-sans-tc: 'Noto Sans TC', sans-serif;
     border-width: 0px 1px 1px 1px;
     border-style: solid solid solid solid;
     border-color: $neutral-gary-lh;
+}
+
+.br-white{
+    border-top: 1px solid $neutral-gary-wh;
 }
 
 // 圓角樣式

@@ -42,8 +42,8 @@
     a{
         color: $neutral-gary-wh;
         &:hover{
-            font-weight: bold;
-            transition: 0.2s;
+            opacity: 0.8;
+            transition: ease-in-out 0.1s;
         }
         &:active{
             color: $neutral-gary-wh;
@@ -178,6 +178,28 @@
     // 發覺用 input 做的傳送按鈕，裡面的字型、大小樣式等都需要重新設定，不會吃到 body 寫好的全域設定，如此一來，傳送表格的「送出」按鈕，應該使用 <input> 還是 <div> 來製作呢
 }
 
+// Footer 區塊
+
+.footer{
+    background-color: $primary;
+}
+
+.social-icon{
+    max-width: 48px;
+}
+
+.f-info{
+    span{
+        display: block;
+    }
+}
+
+.copyright{
+    p{
+        font-family: $roboto;
+        color: $neutral-gary-wh;
+    }
+}
 
 // 平板樣式
 
@@ -232,6 +254,16 @@
             max-width: 648px;
         }
         // 這邊設為 max-width: 648px; 是因爲設計稿上的寬度是「576px」，而在平板時，.container 左右兩邊的 padding 是各為 36px，因此算法為：576px+(36px*2)= 648px，這樣子在 box-sizing: border-box 下實際寬度才會是 576px。
+    }
+
+    .footer{
+        .gap-32{
+            gap: 16px;
+        }
+    }
+
+    .f-nav{
+        display: none;
     }
 }
 
@@ -334,6 +366,41 @@
             max-width: 372px;
         }
     }
+
+    .footer{
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .social-icon{
+        max-width: 24px;
+    }
+
+    .icon-48{
+        font-size: 24px;
+    }
+
+    .info-link{
+        font-size: $text-xs;
+    }
+    .f-info{
+        padding-bottom: 24px;
+    } 
+
+    .copyright{
+        padding-top: 16px;
+        flex-direction: column;
+        p{
+            margin-bottom: 8px;
+        }
+    }
+
+    .policy{
+        flex-direction: column;
+        gap: 8px;
+    }
+
+
 
 }
 

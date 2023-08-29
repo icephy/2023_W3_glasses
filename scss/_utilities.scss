@@ -1,7 +1,21 @@
 // Utilities 間距
+.p-16{
+    padding: 16px;
+}
+
+.ptb-4{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
 .ptb-6{
     padding-top: 6px;
     padding-bottom: 6px;
+}
+
+.plr-8{
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .plr-12{
@@ -9,8 +23,16 @@
     padding-right: 12px;
 }
 
-.p-16{
-    padding: 16px;
+.pt-48{
+    padding-top: 48px;
+} 
+
+.pt-32{
+    padding-top: 32px;
+}
+
+.pb-32{
+    padding-bottom: 32px;
 }
 
 .ptb-25{
@@ -28,6 +50,7 @@
     padding-bottom: 24px;
 }
 
+
 .ptb-296{
     padding-top: 296px;
     padding-bottom: 296px;
@@ -35,6 +58,10 @@
 
 .mb-4{
     margin-bottom: 4px;
+}
+
+.mb-8{
+    margin-bottom: 8px;
 }
 
 .mb-16{
@@ -49,6 +76,14 @@
     margin-bottom: 48px;
 }
 
-.mb-8{
-    margin-bottom: 8px;
+.gap-16{
+    gap: 16px;
+}
+
+.gap-32{
+    gap: 32px;
+}
+
+.gap-48{
+    gap: 48px;
 }
